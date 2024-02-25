@@ -27,5 +27,5 @@ dbConnect();
 
 //default route
 app.get("/",(req,res)=>{
-    res.send(`<h1>Hello From Great Vishal</h1>`)
+    res.send(`<h1>Hello From Nitish</h1>`)
 })
