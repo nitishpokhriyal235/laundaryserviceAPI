@@ -4,7 +4,7 @@ const app=express();
 //load config from any file
 require("dotenv").config();
 
-const PORT=process.env.PORT || 4000;
+const PORT=process.env.PORT || 5000;
 
 //middleware to parse json request body
 app.use(express.json());
@@ -27,5 +27,5 @@ dbConnect();
 
 //default route
 app.get("/",(req,res)=>{
-    res.send(`<h1>Hello From Nitish</h1>`)
+    res.send("express on vercel")
 })
